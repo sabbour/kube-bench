@@ -72,16 +72,15 @@ node:
     - kubernetes
 
   kubernetes:
-    defaultconf: /etc/kubernetes/config    
+    defaultconf: /var/lib/kubelet/kubeconfig    
 
   kubelet:
     bins:
       - "hyperkube kubelet"
       - "kubelet"
     confs:
-      - /etc/kubernetes/kubelet.conf
-      - /etc/kubernetes/kubelet 
-    defaultconf: "/etc/kubernetes/kubelet.conf"
+      - /etc/default/kubelet
+    defaultconf: "/etc/default/kubelet"
 
   proxy:
     bins:
