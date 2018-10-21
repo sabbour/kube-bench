@@ -35,9 +35,8 @@ master:
 node:
   kubelet:
     confs:
-     - /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
-     - /etc/kubernetes/kubelet.conf
-    defaultconf: /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+     - /etc/default/kubelet
+    defaultconf: /etc/default/kubelet
 
   proxy:
     confs:
