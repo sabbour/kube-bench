@@ -72,7 +72,7 @@ node:
     - kubernetes
 
   kubernetes:
-    defaultconf: /var/lib/kubelet/kubeconfig    
+    defaultconf: /etc/default/kubelet  
 
   kubelet:
     bins:
